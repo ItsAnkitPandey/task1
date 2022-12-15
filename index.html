@@ -9,8 +9,9 @@
     <title>Task 1</title>
 </head>
 
-<body>
+<body id="body">
     <h1 class="header">TASK-1</h1>
+    <div class="color"><input type="text" name="" id="color" onkeyup="changeColor()"></div>
     <div class="container">
         
         
@@ -41,7 +42,7 @@
             </div>
                 
                 <div class="languages2">
-                    <div class="html1">
+                    <div class="html">
                         <div class="card">
                             <iframe src="" frameborder="0"></iframe>
                             <h1>Indian</h1>
@@ -51,22 +52,28 @@
                             <iframe src="" frameborder="0"></iframe>
                             <h1>American</h1>
                             <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="card">
-                        <iframe src="" frameborder="0"></iframe>
-                        <h1>Indian</h1>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="card">
-                        <iframe src="" frameborder="0"></iframe>
-                        <h1>American</h1>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                </div>
+                        </div>
+                        <div class="card">
+                           <iframe src="" frameborder="0"></iframe>
+                           <h1>Indian</h1>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="card">
+                            <iframe src="" frameborder="0"></iframe>
+                            <h1>American</h1>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                       </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
+    <script>
+        function changeColor(){
+       let color = document.getElementById('color').value;
+       document.body.style.backgroundColor = color;
+        }
+    </script>
 </body>
 
 </html>

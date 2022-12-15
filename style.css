@@ -2,6 +2,13 @@ body{
     background-color: black;
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.color{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin-bottom: 1rem;
 }
 .container{
     display: flex;
@@ -22,6 +29,12 @@ body{
     box-shadow: 5px 3px 15px 5px rgba(255, 0, 0, 0.831);
     overflow: hidden;
     overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    scroll-snap-type: x mandatory;
+    justify-content: space-between;
+    width: 99%;
+    align-items: center;
     display: flex;
     flex-direction: row;
     white-space: nowrap;
@@ -41,31 +54,33 @@ body{
 
 
 .html{
-    display: inline-flex;
+    display: flex;
     /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-between;
+    /* align-self: center; */
     margin: 1em;
     padding: 1em;
     overflow: hidden;
     overflow-x: scroll;
-    
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    scroll-snap-type: x mandatory;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
 }
-.html1{
-    display: inline-flex;
-    /* flex-direction: row; */
-    margin: 1em;
-    padding: 1em;
-    overflow: hidden;
-    overflow-x: scroll;
-    
-}
 .card{
-   margin: 1em; 
+   margin: 3% 40%; 
    border: 1px solid red;
-   padding: 1em; 
+   padding: 4% 5%; 
+   scroll-behavior: smooth;
+   scroll-snap-align: center;
+   scroll-snap-type: x mandatory;
+   align-items: center;
+   justify-content: center;
    width: 99%;
   
 }
+
 
 
